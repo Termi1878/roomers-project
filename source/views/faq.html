@@ -20,50 +20,35 @@
             <image xlink:href="/assets/images/Logo_svg.svg" height="15%" width="100%" />
         </svg>
     </h1>
-    <header class="header">
-        <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="list__item">
-                    Meble
-                </li>
-                <li class="list__item">
-                    Oświetlenie
-                </li>
-                <li class="list__item">
-                    Dodatki
-                </li>
-                <li class="list__item">
-                    Akcesoria
-                </li>
-                <li class="list__item">
-                    Zewnętrzne
-                </li>
-                <li class="list__item">
-                    Łazienka
-                </li>
-                <li class="list__item">
-                    Nowości
-                </li>
-                <li class="list__item">
-                    Projektanci
-                </li>
-                <li class="list__item">
-                    Sale
-                </li>
-                <li class="list__item">
-                    <svg width="8%" height="5%" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                        <image xlink:href="/assets/images/rooms_search.svg" height="40%" width="100%" />
-                    </svg>
-                </li>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <section class="menu">
+        <div class="menu__left">
+            <ul class="menu__list">
+                <li class="menu__item">Produkty</li>
+                <li class="menu__item">Moje konto</li>
+                <li class="menu__item">Regulamin</li>
             </ul>
-        </nav>
-    </header>
+            <ul class="menu__list">
+                <li class="menu__item">Współpraca</li>
+                <li class="menu__item">Kontakt</li>
+                <li class="menu__item">FAQ</li>
+            </ul>
+        </div>
+        <div class="menu__right">
+            <div class="menu__language">
+                <h3 class="title title--h3">Język</h3>
+                <span>Polski</span>/ <span>Angielski</span> 
+            </div>
+            <div class="menu__currency">
+                <h3 class="title title--h3">Waluta</h3>
+                <span>Złoty</span>/<span>Euro</span> 
+            </div>
+        </div>
+    </section>
     <div class="content__title">
         <h2 class="title title-h2">
             FAQ
@@ -126,8 +111,7 @@
         const ico = document.querySelector('.burger');
         ico.addEventListener('click', function () {
             this.classList.toggle('active');
-            document.querySelector('.navbar').classList.toggle('none__navbar');
-            document.querySelector('.content__title').classList.toggle('content__margin');
+            document.querySelector('.menu').classList.toggle('none__menu');
         });
     </script>
 </body>
