@@ -15,7 +15,13 @@
 
 <body>
     <section class="hero"></section>
-    <h1 class="logo"></h1>
+    <h1 class="logo">
+        <svg width="8%" height="5%"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        fill="#ffffff">       
+        <image xlink:href="/assets/images/logo_white.svg" height="15%" width="100%"/>
+      </svg>
+    </h1>
     <header class="header">
             <div class="burger">
                     <span></span>
@@ -61,6 +67,44 @@
             </ul>  
         </nav>
     </header>
+    <section class="content">
+        <div class="content__column">
+            <h2 class="column__header">500 metrów kwadratowych postindustrialnej hali oddanew posiadanie najlepszym europejskim markom meblowym.
+            </h2>
+            <div class="column__description">
+                <p class="text text--column">
+                        Najnowsze projekty i klasyki designu: do salonu i jadalni, sypialni, łazienki, a także ogrodu i na taras.
+                </p>
+                <p class="text text--column">   
+            Niekoniecznie dla minimalistów ale na pewno dla przestrzennych purystów. Dla tych, którzy zamiast nadmiaru domowych obiektów wolą je odpowiednio wyeksponować.
+                </p>   
+            </div>
+        </div>
+        <div class="content__column">
+           <div class='column__left'>
+               <img class="left__photo" src="assets/images/island.jpg" alt="#" srcset="assets/images/island.jpg">
+               <h2 class="title title--h3">ISLAND Collection</h2>
+               <p class="text">Francesco Rota</p>
+           </div> 
+           <div class='column__right'>
+                <img class="right__photo" src="assets/images/stick.jpg" alt="#" srcset="assets/images/stick.jpg">
+                <h2 class="title title--h3">STICK Collection</h2>
+                <p class="text">Jan Plechac / Henry Wielgus</p>
+           </div> 
+        </div>
+        <div class="content__column content__column--second">
+                <div class='column__left'>
+                    <img class="left__photo" src="assets/images/space.jpg" alt="#" srcset="assets/images/space.jpg">
+                    <h2 class="title title--h3">Space Invaders Mirrors</h2>
+                    <p class="text">Piero Lissoni</p>
+                </div> 
+                <div class='column__right'>
+                     <img class="right__photo" src="assets/images/desk.jpg" alt="#" srcset="assets/images/desk.jpg">
+                     <h2 class="title title--h3">Agape Desks</h2>
+                     <p class="text">UT Agape</p>
+                </div> 
+             </div>
+    </section>
     <script>
         const ico = document.querySelector('.burger');
         ico.addEventListener('click', function () {
