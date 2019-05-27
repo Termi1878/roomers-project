@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rooms</title>
+    <link href="https://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2.2.0/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="assets/styles/bundle.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-punk.css"> -->
+</head>
+
+<body>
+    <h1 class="logo">
+        <svg width="8%" height="5%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#ffffff">
+            <image xlink:href="/assets/images/Logo_svg.svg" height="15%" width="100%" />
+        </svg>
+    </h1>
+    <header class="header">
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="list__item">
+                    Meble
+                </li>
+                <li class="list__item">
+                    Oświetlenie
+                </li>
+                <li class="list__item">
+                    Dodatki
+                </li>
+                <li class="list__item">
+                    Akcesoria
+                </li>
+                <li class="list__item">
+                    Zewnętrzne
+                </li>
+                <li class="list__item">
+                    Łazienka
+                </li>
+                <li class="list__item">
+                    Nowości
+                </li>
+                <li class="list__item">
+                    Projektanci
+                </li>
+                <li class="list__item">
+                    Sale
+                </li>
+                <li class="list__item">
+                    <svg width="8%" height="5%" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                        <image xlink:href="/assets/images/rooms_search.svg" height="40%" width="100%" />
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content__title">
+        <h2 class="title title-h2">
+            FAQ
+        </h2>
+    </div>
+    <section class="content content__faq">
+        <div class="content__column content__column--text">
+            <h3 class="title title--h3">General information
+            </h3>
+            <p class="text">
+                As soon as we have received your order we will send it to you as soon as possible. In general, the
+                delivery term is 1-2 business days. If we are unable to deliver the products within the agreed term, we
+                will notify you accordingly.
+            </p>
+        </div>
+        <div class="content__column content__column--text">
+            <h3 class="title title--h3">Delivery
+            </h3>
+            <p class="text">
+                All orders placed before 4:00pm (CET§) will be dispatched the same day (Monday – Friday). All orders
+                will be provided with a tracking number and insurance for the cost of your package.
+            </p>
+        </div>
+        <div class="content__column content__column--text">
+            <h3 class="title title--h3">Return
+            </h3>
+            <p class="text">
+                As soon as we have received your order we will send it to you as soon as possible. In general, the
+                delivery term is 1-2 business days. If we are unable to deliver the products within the agreed term, we
+                will notify you accordingly.
+            </p>
+        </div>
+        <div class="content__column content__column--text">
+            <h3 class="title title--h3">Account
+            </h3>
+            <p class="text">
+                All orders placed before 4:00pm (CET) will be dispatched the same day (Monday – Friday). All orders will
+                be provided with a tracking number and insurance for the cost of your package.
+            </p>
+        </div>
+        <div class="content__column content__column--text">
+            <h3 class="title title--h3">Order
+            </h3>
+            <p class="text">
+                As soon as we have received your order we will send it to you as soon as possible. In general, the
+                delivery term is 1-2 business days. If we are unable to deliver the products within the agreed term, we
+                will notify you accordingly.
+            </p>
+        </div>
+        <div class="content__column content__column--text">
+            <h3 class="title title--h3">Account
+            </h3>
+            <p class="text">
+                All orders placed before 4:00pm (CET) will be dispatched the same day (Monday – Friday). All orders will
+                be provided with a tracking number and insurance for the cost of your package.
+            </p>
+        </div>
+    </section>
+    <script>
+        const ico = document.querySelector('.burger');
+        ico.addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.navbar').classList.toggle('none__navbar');
+            document.querySelector('.content__title').classList.toggle('content__margin');
+        });
+    </script>
+</body>
+
+</html>
