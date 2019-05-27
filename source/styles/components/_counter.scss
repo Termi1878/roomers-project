@@ -1,0 +1,16 @@
+.counter {
+    .about__list {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        color: $color-about;
+        @include small-tablet {
+            flex-direction: column;
+        }
+    }
+    @include tablet{
+        margin-top:100px;
+    }
+    @include marmur-bg;
+    padding:5% 2%;
+}

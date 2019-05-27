@@ -1,0 +1,44 @@
+.section{
+    padding:20px;
+    @include marmur-bg;
+    display:table;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    &__list{
+        & li {
+            padding: 0 2vw;
+        }
+        padding: 20px;
+        display:flex;
+        justify-content: center;
+        opacity: .8;
+        @include tablet{
+            margin-top:100px;
+            flex-direction:column;
+            align-items: center;
+            font-size: 24px;
+            padding: 20px 0 20px 0;
+            line-height: 50px;
+        }
+    }
+}
+.section{
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+}
+.etapy{
+    display:block;
+    justify-content: none;
+    align-items: none;
+    height: 170px;
+    @include tablet{
+        height:100%;
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+    }
+}

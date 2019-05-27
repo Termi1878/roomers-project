@@ -1,0 +1,39 @@
+.gallery{
+    height:100%;
+    margin-top: -15px;
+    padding: 0 10%;
+    &__belt{
+        height:120px;
+        margin: 10px 0;
+        & .flickity-viewport{
+            height:100% !important;
+        }
+    }
+    &-cell{
+        height:100%;
+        width: 100%;
+        margin-right: 10px;
+        counter-increment: gallery-cell;
+        & img{
+            width:100%;
+        }
+    }
+}
+.main-gallery{
+    height:50vw;
+}
+
+.belt{
+    &__item{
+        height:100%;
+        & img{
+            width:200px;
+            height:100%;
+        }
+    }
+}
+.carousel-nav .carousel-cell {
+    height: 150px;
+    width: 170px;
+    margin-right: 20px;
+  }

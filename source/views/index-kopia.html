@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/bundle.css">
+</head>
+<body>
+    <img src="/assets/images/hamenu.png" alt="hamburger" class="menu__icon">
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li> <a href="#">O inwestycji</a></li>
+            <li> <a href="#">Znajdź Dom</a></li>
+            <li><a href="#">Wizualizacje</a></li>
+            <li class="item__logo"><a href="#">Osiedle Marmurowe<sup>2</sup></a></li>
+            <li><a href="#">Lokalizacja</a></li>
+            <li><a href="#">O deweloperze</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+    <section class="about">
+        <div class="about__menu">
+            <h2 class="title title--h3">O deweloperze</h2>
+            <ul class="about__list">
+                <li>
+                    <h3 class="title title--h1 title--about">
+                        32 000
+                    </h3>
+                    <p class="text text--about">
+                        m<sup>2</sup> powierzchni
+                    </p>
+                </li>
+                <li>
+                    <h3 class="title title--h1 title--about">
+                        10
+                    </h3>
+                    <p class="text text--about">
+                        lat doświadczenia
+                    </p>
+                </li>
+                <li>
+                    <h3 class="title title--h1 title--about">
+                        284
+                    </h3>
+                    <p class="text text--about">
+                        zadowolonych klientów
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about__info">
+        <p class="text text--info">
+            Decydując się na zakup mieszkania marzymy o miejscu idealnym, komfortowym i bezpiecznym, odpowiadającym naszym gustom i możliwościom.
+            Nie jest to łatwy wybór biorąc pod uwagę ilość ofert mieszkaniowych w Łodzi.
+        </p>
+        <p class="text text--info">
+            Chcąc sprostać Państwa oczekiwaniom i wychodząc naprzeciw konkurencji stworzyliśmy nową inwestycję w centrum miasta – OSIEDLE MARMUROWE.
+            Osiedle Marmurowe jest to druga inwestycja rodzinnej firmy Porczyńscy Investment Sp. Jawna. Pierwsza – Kąkolowa Aleja w Aleksandrowie Łódzkim cieszy się ogromną popularnością i ciągłym zainteresowaniem wśród mieszkańców Łodzi.
+        </p>
+        <p class="text text--info">
+            Znając swoje możliwości i bazując na zadowoleniu naszych klientów zdecydowaliśmy się na budowę osiedla we wschodniej części Łodzi przy ulicy Beskidzkiej 134
+            (w pobliżu Centrum Handlowego M1).
+        </p>
+        <p class="text text--info">
+            Doświadczona i wykwalifikowana kadra inżynierska czuwa nad jakością wykonywanych prac budowlanych i nad wysokim standardem wykończenia mieszkań. Nasza dbałość o szczegóły, pasja i konsekwencja w dążeniu do wyznaczonego celu są gwarancją zadowolenia nawet najbardziej wymagających klientów.
+        </p>
+    </section>
+    <div class="about--title">
+        <h2 class="title title--h4">Zrealizowane inwestycje:</h2>
+    </div>
+    <section class="about__projects">
+        <div class="about__project">
+            <img src="/assets/images/osiedle.jpg" alt="osiedle">
+            <h3 class="title title--h4">Kąkolowa Aleja</h3>
+            <p class="text text--info">Kąkolowa Aleja to ekskluzywny zespół 44 apartamentów o powierzchniach od 50 do 100 mkw., rozmieszczonych w dziewięciu budynkach na terenie hektarowej działki. Kameralne osiedle zlokalizowane jest w Łodzi przy ulicy Kąkolowej na granicy Łodzi i Aleksandrowa Łódzkiego.</p>
+        </div>
+        <div class="about__project">
+            <img src="/assets/images/osiedle.jpg" alt="osiedle">
+            <h3 class="title title--h4">Kąkolowa Aleja</h3>
+            <p class="text text--info">Kąkolowa Aleja to ekskluzywny zespół 44 apartamentów o powierzchniach od 50 do 100 mkw., rozmieszczonych w dziewięciu budynkach na terenie hektarowej działki. Kameralne osiedle zlokalizowane jest w Łodzi przy ulicy Kąkolowej na granicy Łodzi i Aleksandrowa Łódzkiego.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <h2>Wszelkie Prawa Zastrzezone PORCZYŃSCY INVESTMENT Sp.J.</h2>
+        <h3>Projekt i wdrozenie:</h3>
+    </footer>
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+      $('.menu__icon').on('click', function(){
+        $('.navbar').toggleClass('display__navbar');
+      })
+  </script>
+</body>
+</html>

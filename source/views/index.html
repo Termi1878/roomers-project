@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rooms</title>
+    <link href="https://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2.2.0/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="assets/styles/bundle.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-punk.css"> -->
+</head>
+
+<body>
+    <section class="hero"></section>
+    <h1 class="logo"></h1>
+    <header class="header">
+            <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="list__item">
+                    Meble
+                </li>
+                <li class="list__item">
+                    Oświetlenie
+                </li>
+                <li class="list__item">
+                    Dodatki
+                </li>
+                <li class="list__item">
+                    Akcesoria
+                </li>
+                <li class="list__item">
+                    Zewnętrzne
+                </li>
+                <li class="list__item">
+                    Łazienka
+                </li>
+                <li class="list__item">
+                    Nowości
+                </li>
+                <li class="list__item">
+                    Projektanci
+                </li>
+                <li class="list__item">
+                    Sale
+                </li>
+                <li class="list__item">
+                <svg width="8%" height="5%"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#ffffff">       
+                <image xlink:href="/assets/images/search_ikon.svg" height="40%" width="100%"/>
+              </svg>
+            </li>
+            </ul>  
+        </nav>
+    </header>
+    <script>
+        const ico = document.querySelector('.burger');
+        ico.addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.navbar').classList.toggle('none__navbar');
+        });
+    </script>
+</body>
+
+</html>

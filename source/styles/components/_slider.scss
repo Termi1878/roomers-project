@@ -1,0 +1,108 @@
+.slider {
+    &__wrapper {
+        @include desktop {
+            width: 70%;
+        }
+        @include marmur-bg;
+        width: 40%;
+        margin: 0 auto;
+        padding: 2% 0% 0;
+        text-align:center;
+    }
+}
+.site{
+    &__content{
+        display:flex;
+        height:100%;
+        & img{
+            width:100%;
+            height:100%;
+            background-repeat: no-repeat !important;
+            object-fit: cover;
+        }
+        & canvas{
+            height:100% !important;
+            width: 100% !important;
+        }
+    }
+}
+.wrapper {
+    &__info {
+        padding: 0 2% 5%;
+    }
+
+    &__border {
+        height: 1.5px;
+        opacity: 0.8;
+        color: black;
+    }
+
+    &__nav {
+        border-top: $border;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        @include marmur-bg;
+        width: 40%;
+        @include desktop {
+            width: 70%;
+        }
+        z-index: 1;
+        position: absolute;
+    }
+}
+
+.nav {
+    &__content {
+        opacity: 0.6;
+        font-size: 14px;
+    }
+}
+.carousel-cell {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+body.page-id-271{
+    .flickity-prev-next-button{
+        &.previous {
+            left: 30%;
+            top: 3.5%;
+            z-index: 12;
+            @include desktop {
+                left: 15%;
+            }
+        }
+        &.next {
+            right: 30%;
+            top: 3.5%;
+            z-index: 9999;
+            @include desktop {
+                right: 15%;
+            }
+        }
+    }
+    .flickity-button {
+        background: none;
+        &:hover {
+            background: none;
+        }
+    }
+}
+.gm-ui-hover-effect {
+    display: none !important;
+}
+
+.gm-style .gm-style-iw-c {
+    box-shadow: none;
+    text-align: center;
+    border-radius: 3px;
+    border: $border;
+}

@@ -1,0 +1,102 @@
+@mixin media($minWidth, $maxWidth: null) {
+  @if type-of($minWidth) != number {
+    $minWidth: breakpoint($minWidth);
+  }
+
+  @if ($maxWidth != null) {
+    @if type-of($maxWidth) != number {
+      $maxWidth: breakpoint($maxWidth);
+    }
+
+    @media (min-width: $minWidth) and (max-width: $maxWidth - 1px) {
+      @content;
+    }
+  } @else {
+    @if ($minWidth != 0) {
+      @media (min-width: $minWidth) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+@mixin each-breakpoint($map, $properties, $operation: null, $operationValue: null) {
+  @each $bp, $value in $map {
+    $newValue: $value;
+
+    @if ($operation == 'multiply') {
+      $newValue: $value * $operationValue;
+    } @else if ($operation == 'divide') {
+      $newValue: $value / $operationValue;
+    } @else if ($operation == 'add') {
+      $newValue: $value + $operationValue;
+    } @else if ($operation == 'subtract') {
+      $newValue: $value - $operationValue;
+    }
+
+    @include media($bp) {
+      @each $property in $properties {
+        #{$property}: $newValue;
+      }
+    }
+  }
+}
+$phone: 567px;
+$small-tablet: 767px;
+$tablet: 992px;
+$desktop: 1200px;
+
+@mixin phone {
+  @media (max-width: $phone) {
+    @content;
+  }
+}
+@mixin phone-min {
+  @media (min-width: $phone) {
+    @content;
+  }
+}
+@mixin small-tablet {
+  @media (max-width: $small-tablet) {
+    @content;
+    }
+}
+
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+@mixin desktop-min {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+@mixin tablet-min {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+@mixin marmur-bg{
+  background: url("https://marmurowe2.dev.ilike-art.com/wp-content/uploads/2019/05/bg_marmur.png");
+  background-size: cover;
+}
+@mixin contact-form{
+  padding:10px;
+  outline: none;
+  border: none;
+  background: #f5f5f6;
+  opacity: .8;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

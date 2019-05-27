@@ -1,0 +1,31 @@
+
+.info {
+    padding: 5% 15%;
+}
+.projects {
+    &__header {
+        text-align: center;
+    }
+    display: flex;
+    justify-content: space-evenly;
+    @include small-tablet {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+    }
+    padding:5% 0;
+}
+.project {
+    @include small-tablet {
+        margin-top: 2%;
+        width: 100%;
+    }
+    width: 40%;
+    img {
+        width: 100%;
+    }
+}
+
+.text--info {
+    font-size: 14px;
+}

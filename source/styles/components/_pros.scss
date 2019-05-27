@@ -1,0 +1,22 @@
+.pros {
+    justify-content: flex-end;
+
+    &__photo {
+        width: 60%;
+        overflow: hidden;
+        margin-left: 5%;
+        padding-top: 15%;
+
+        @include tablet {
+            width: 80%;
+            margin: 0;
+        }
+
+        & img {
+            @include tablet {
+                transform: translateX(-30%);
+            }
+            height: 80%;
+        }
+    }
+}

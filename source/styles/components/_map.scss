@@ -1,0 +1,40 @@
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+.map-icon-label .map-icon {
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 48px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.st0 {
+    display: none;
+    fill: #FFFFFF;
+}
+
+.st1 {
+    fill: #1B171B;
+}
+
+.st2 {
+    display: none;
+    fill: #1B171B;
+}
+
+.st3 {
+    fill: #FFFFFF;
+}
+
+.map__description{
+    display:flex;
+    height:200px;
+    justify-content: center;
+    padding: 20px 30px;
+    margin-top:100px;
+}

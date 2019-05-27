@@ -1,0 +1,25 @@
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  @include each-breakpoint($font-sizes, font-size);
+}
+
+body {
+  position: relative;
+  background: $color-bg;
+  font-family: $font-base;
+  font-size: 1em;
+  color: $color-text;
+  line-height: normal;
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  width:100%;
+}
+
