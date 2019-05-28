@@ -16,42 +16,44 @@
 <body>
     <section class="hero"></section>
     <h1 class="logo">
-        <svg width="8%" height="5%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            fill="#ffffff">
+        <svg width="8%" height="5%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image xlink:href="/assets/images/logo_white.svg" height="15%" width="100%" />
         </svg>
     </h1>
     <header class="header">
-        <div class="burger burger--white">
+        <div class="burger burger--white burger--home">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <section class="menu">
-                <div class="menu__left">
-                    <ul class="menu__list">
-                        <li class="menu__item">Produkty</li>
-                        <li class="menu__item">Moje konto</li>
-                        <li class="menu__item">Regulamin</li>
-                    </ul>
-                    <ul class="menu__list">
-                        <li class="menu__item">Współpraca</li>
-                        <li class="menu__item">Kontakt</li>
-                        <li class="menu__item">FAQ</li>
-                    </ul>
+            <div class="menu__left">
+                <ul class="menu__list">
+                    <li class="menu__item">Produkty</li>
+                    <li class="menu__item">Moje konto</li>
+                    <li class="menu__item">Regulamin</li>
+                </ul>
+                <ul class="menu__list">
+                    <li class="menu__item">Współpraca</li>
+                    <li class="menu__item">Kontakt</li>
+                    <li class="menu__item">FAQ</li>
+                </ul>
+            </div>
+            <div class="menu__right">
+                <div class="menu__language">
+                    <h3 class="title title--h3">Język</h3>
+                    <input class="checked" type="radio" name="language" id="polish">
+                    <label for="polish">Polski</label>/
+                    <input class="checked" type="radio" name="language" id="english">
+                    <label for="english">Angielski</label>
                 </div>
-                <div class="menu__right">
-                    <div class="menu__language">
-                        <h3 class="title title--h3">Język</h3>
-                        <span>Polski</span>/ <span>Angielski</span> 
-                    </div>
-                    <div class="menu__currency">
-                        <h3 class="title title--h3">Waluta</h3>
-                        <span>Złoty</span>/<span>Euro</span> 
-                    </div>
+                <div class="menu__currency">
+                    <h3 class="title title--h3">Waluta</h3>
+                    <span>Złoty</span>/<span>Euro</span>
                 </div>
-            </section>
-        <nav class="navbar navbar--white">
+            </div>
+        </section>
+        <nav class="navbar">
             <ul class="navbar__list">
                 <li class="list__item">
                     Meble
@@ -135,6 +137,8 @@
         ico.addEventListener('click', function () {
             this.classList.toggle('active');
             document.querySelector('.menu').classList.toggle('none__menu');
+            document.querySelector('.navbar').classList.toggle('display__none');
+            document.querySelector('.burger--home').classList.toggle('burger--white');
         });
     </script>
 </body>
