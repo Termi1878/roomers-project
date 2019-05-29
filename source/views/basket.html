@@ -45,7 +45,7 @@
                 <label for="polish">Polski</label>/
                 <input class="checked" type="radio" name="currency" id="english">
                 <label for="english">Angielski</label>
-            </div> 
+            </div>
             <div class="menu__currency">
                 <h3 class="title title--h3">Waluta</h3>
                 <input class="checked" type="radio" name="language" id="zloty" checked>
@@ -55,32 +55,106 @@
             </div>
         </div>
     </section>
-    <div class="basket">
-        <h2 class="title title--h3">Koszyk:        <span> 2</span></h2>
+    <div class="basket__count">
+        <h2 class="title title--h3">Koszyk: <span> </span></h2>
     </div>
-    <section class="login">
-        <div class="login__header"> <h2 class="title title--h3 title--login">Logowanie</h2></div>
-        <div class="login__form">
-            <form action="log-in.html" method="POST">
-                <p><label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Adres e-mail"></p>
-                <p><label for="password"></label>
-                <input type="password" name="password" id="password" placeholder="Hasło"></p>
-                    <div class="reminder" ><a href="#">Nie pamiętasz hasła?</a></div> 
-                <button type="submit" class="submit">Zaloguj się</button>
-            </form>
+    <section class="basket">
+        <div class="basket__header">
+            <h2 class="title title--h3">Koszyk</h2>
         </div>
-        <div class="sign-up">
-            <span>Nie masz konta?</span>
-            <span><a href="#">Zarejestruj się</a></span>
+        <div class="basket__content">
+            <div class="basket__item">
+                <div class="item__left">
+                    <div class="basket__image">
+                        <img src="/assets/images/modulowa.jpeg" alt="">
+                    </div>
+                    <div class="basket__title">
+                        <h3 class="title title--h4">Inmotion</h3>
+                        <h3 class="title title--h4">Szafki modułowe</h3>
+                    </div>
+                </div>
+                <div class="basket__description">
+                    <div class="description__item">
+                        <span class="item__info">Kolor bazowy:</span>
+                        <span class="item__result">Biały</span>
+                    </div>
+                    <div class="description__item">
+                        <span class="item__info">Wykończenia:</span>
+                        <span class="item__result">Stal</span>
+                    </div>
+                    <div class="description__item">
+                        <span class="item__info">Wnętrze:</span>
+                        <span class="item__result">Satyna</span>
+                    </div>
+                </div>
+                <div class="item__right">
+                    <div class="basket__price">
+                        <span class="title title--h3 price__calc">4099</span>
+                    </div>
+                    <div class="basket__delete">
+                        X
+                    </div>
+                </div>
+            </div>
+            <div class="basket__item">
+                <div class="item__left">
+                    <div class="basket__image">
+                        <img src="/assets/images/swiecznik.jpg" alt="">
+                    </div>
+                    <div class="basket__title">
+                        <h3 class="title title--h4">Chunk</h3>
+                        <h3 class="title title--h4">Świecznik marmurowy</h3>
+                    </div>
+                </div>
+                <div class="basket__description">
+                    <div class="description__item">
+                        <span class="item__info">Kolor bazowy:</span>
+                        <span class="item__result">Biały marmur</span>
+                    </div>
+                    <div class="description__item">
+                        <span class="item__info">Wykończenia:</span>
+                        <span class="item__result">Miedź</span>
+                    </div>
+                </div>
+                <div class="item__right">
+                    <div class="basket__price">
+                        <span class="title title--h3 price__calc">2099</span>
+                    </div>
+                </div>
+                <div class="basket__delete">
+                        X
+                    </div>
+            </div>
+        </div>
+        <div class="basket__payment">
+            <div class="basket__price">
+                <span>Razem do zapłaty:</span>
+                <span class="price__calc price__result"></span>
+            </div>
+            <div class="payment__checkout"> <a href="log-in.html">Przejdź do płatności</a></div>
         </div>
     </section>
     <script>
+        var basketCount = document.querySelectorAll('.basket__item').length;
+        document.querySelector('.basket__count span').innerText += basketCount;
+        document.querySelector
         const ico = document.querySelector('.burger');
         ico.addEventListener('click', function () {
             this.classList.toggle('active');
             document.querySelector('.menu').classList.toggle('none__menu');
         });
+        var priceCheckout = document.querySelector('.price__result');
+        var itemsCalc = document.querySelectorAll('.basket__content .price__calc');
+        var count = 0;
+        for(let i = 0; i<itemsCalc.length;i++){
+            count += parseInt(itemsCalc[i].innerText);
+        }
+        priceCheckout.innerText = count.toString();
+        var itemsPrice = document.querySelectorAll('.basket .price__calc');
+        for(let i = 0; i<itemsPrice.length;i++){
+            itemsPrice[i].innerText += ' zł';
+        }
     </script>
 </body>
+
 </html>
