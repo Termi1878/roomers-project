@@ -16,8 +16,8 @@
 <body>
     <section class="hero"></section>
     <h1 class="logo">
-        <svg width="8%" height="5%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <image xlink:href="/assets/images/logo_white.svg" height="15%" width="100%" />
+        <svg width="90%" height="70%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image xlink:href="/assets/images/logo_white.svg" height="50%" width="100%" />
         </svg>
     </h1>
     <header class="header">
@@ -29,27 +29,29 @@
         <section class="menu">
             <div class="menu__left">
                 <ul class="menu__list">
-                    <li class="menu__item">Produkty</li>
-                    <li class="menu__item">Moje konto</li>
-                    <li class="menu__item">Regulamin</li>
+                    <li class="menu__item"><a href="#">Produkty</a</li> <li class="menu__item"><a href="#">Moje konto</a></li>
+                    <li class="menu__item"><a href="#">Regulamin</a></li>
                 </ul>
                 <ul class="menu__list">
-                    <li class="menu__item">Współpraca</li>
-                    <li class="menu__item">Kontakt</li>
-                    <li class="menu__item">FAQ</li>
+                    <li class="menu__item"><a href="#">Współpraca</a></li>
+                    <li class="menu__item"><a href="#">Kontakt</a></li>
+                    <li class="menu__item"><a href="#">FAQ</a></li>
                 </ul>
             </div>
             <div class="menu__right">
                 <div class="menu__language">
                     <h3 class="title title--h3">Język</h3>
-                    <input class="checked" type="radio" name="language" id="polish">
+                    <input class="checked" type="radio" name="language" id="polish" checked>
                     <label for="polish">Polski</label>/
                     <input class="checked" type="radio" name="language" id="english">
                     <label for="english">Angielski</label>
                 </div>
                 <div class="menu__currency">
                     <h3 class="title title--h3">Waluta</h3>
-                    <span>Złoty</span>/<span>Euro</span>
+                    <input class="checked" type="radio" name="currency" id="zloty" checked>
+                    <label for="zloty">Złoty</label>/
+                    <input class="checked" type="radio" name="currency" id="euro">
+                    <label for="euro">Euro</label>
                 </div>
             </div>
         </section>
@@ -139,6 +141,7 @@
             document.querySelector('.menu').classList.toggle('none__menu');
             document.querySelector('.navbar').classList.toggle('display__none');
             document.querySelector('.burger--home').classList.toggle('burger--white');
+            document.querySelector('.logo svg').classList.toggle('logo__invert');
         });
     </script>
 </body>

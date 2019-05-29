@@ -86,17 +86,10 @@ $desktop: 1200px;
     @content;
   }
 }
-@mixin marmur-bg{
-  background: url("https://marmurowe2.dev.ilike-art.com/wp-content/uploads/2019/05/bg_marmur.png");
-  background-size: cover;
-}
-@mixin contact-form{
-  padding:10px;
-  outline: none;
-  border: none;
-  background: #f5f5f6;
-  opacity: .8;
-  font-weight: 500;
-  margin-top: 10px;
-  margin-bottom: 10px;
+@mixin input-styling{
+  background: none;
+  font-size: 15px;
+  padding: 0;
+  outline: 0;
+  border:0;
 }

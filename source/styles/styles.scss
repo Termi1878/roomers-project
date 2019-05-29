@@ -10,7 +10,16 @@
     src:
         url("/assets/fonts/NeueHansKendrick-Regular.woff") format("woff"),
         url("/assets/fonts/NeueHansKendrick-Regular.otf") format("opentype"),
-        url("/assets/fonts/NeueHansKendrick-Regular.woff2") format("woff2"),
+        url("/assets/fonts/NeueHansKendrick-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NeueHansKendrickMedium";
+    src: url("/assets/fonts/NeueHansKendrick-Medium.eot");
+    src:
+        url("/assets/fonts/NeueHansKendrick-Medium.woff") format("woff"),
+        url("/assets/fonts/NeueHansKendrick-Medium.otf") format("opentype"),
+        url("/assets/fonts/NeueHansKendrick-Medium.woff2") format("woff2"),
 }
 
 h1,
@@ -35,9 +44,15 @@ body {
     color: #131313;
 }
 
+* {
+    font-family: "NeueHansKendrickMedium";
+    font-weight: normal;
+    font-style: normal;
+}
+
 .burger {
     position: absolute;
-    top: 2%;
+    top: 35px;
     left: 55px;
     width: 40px;
     height: 25px;
@@ -104,71 +119,87 @@ body {
     font-size: 24px;
     padding: 3px 0;
 }
-.menu__item{
+
+.menu__item {
     list-style-type: none;
-    padding:3px 0;
+    padding: 3px 0;
 }
+
 .navbar {
     &__list {
         margin: 0;
         padding: 0;
     }
+
     top:150px;
     left:55px;
     position: absolute;
     z-index: 99;
-        color: #fff;
+    color: #fff;
 }
-.menu{
-    transition: visibility .3s,
-    opacity .3s linear;
-    opacity:1;
+
+.menu {
+    z-index: 1;
+    transition: visibility .5s,
+        opacity .5s linear;
+    opacity: 1;
     visibility: hidden;
-    display:none;
-    background: #fff;
+    display: none;
+    background: #ededed;
     padding: 100px 0 20px 0;
     justify-content: space-around;
-    @include phone{
+
+    @include phone {
         flex-direction: column;
     }
 }
-.menu__left, .menu__right{
-    display:flex;
-    width:40%;
+
+.menu__left,
+.menu__right {
+    display: flex;
+    width: 40%;
     justify-content: space-around;
-    flex-wrap:wrap;
-    @include phone{
-        width:100%;
+    flex-wrap: wrap;
+
+    @include phone {
+        width: 100%;
         flex-direction: column;
     }
 }
-@include phone{
-    .menu__currency, .menu__language{
+
+@include phone {
+
+    .menu__currency,
+    .menu__language {
         padding: 10px 0 0 40px;
     }
 }
-.none__menu{
+
+.none__menu {
     visibility: visible;
-    display:flex;
+    display: flex;
     opacity: 1;
     /*dodatkowe */
-        position: absolute;
-        top:0;
-        width:100%;
-    }
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .logo {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     right: 50px;
     left: 0;
-    top: 2%;
+    top: 25px;
     overflow: hidden;
     position: absolute;
     z-index: 99;
+
     & svg {
         width: 100px;
     }
+
     height:50px;
 }
 
@@ -180,9 +211,11 @@ a {
 .text--column {
     margin: 2em 0;
 }
-.display__none{
-    display:none;
+
+.display__none {
+    display: none;
 }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -260,6 +293,7 @@ a {
         }
     }
 }
+
 /*faq*/
 .content__faq {
     flex-direction: row;
@@ -282,23 +316,103 @@ a {
 
     margin-top:3%;
 }
-.content__title{
-    margin-left:14%;
-    margin-top:100px;
-    @include small-tablet{
-        margin-left:10%;
+
+.content__title {
+    margin-left: 14%;
+    margin-top: 100px;
+
+    @include small-tablet {
+        margin-left: 10%;
     }
 }
-.content__blur {
-    filter:blur(10px);
+
+.logo__invert {
+    filter: invert(1);
 }
-.checked{
-    visibility:hidden;
-    display:none;
+
+.title--h3 {
+    font-size: 20px;
 }
-.checked + label{
-    color:gray;
+
+.checked {
+    visibility: hidden;
+    display: none;
 }
-.checked:checked + label{
-    color:#000;
+
+.checked+label {
+    color: gray;
+}
+
+.checked:checked+label {
+    color: #000;
+}
+
+/*logging site */
+.basket {
+    margin: 35px 0 0 160px;
+
+    @include phone {
+        margin-top: 70px;
+    }
+}
+
+.login {
+    margin: 0 auto;
+    width: 35%;
+    margin-top: 100px;
+
+    @include tablet {
+        width: 60%;
+    }
+
+    @include phone {
+        width: 80%;
+    }
+
+    &__header {
+        opacity: 0.2;
+    }
+
+    p {
+        & input {
+            @include input-styling;
+            height: 35px;
+            width: 100%;
+            border-bottom: 1px solid #000;
+            opacity: 0.6;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus {
+            border-bottom: 1px solid #000;
+            -webkit-text-fill-color: none;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    }
+
+    .submit {
+        font-weight: 600;
+        border: 0;
+        @include input-styling;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            color: #000;
+        }
+    }
+
+    .reminder {
+        margin: 20px 0;
+        font-size: 12px;
+    }
+
+    .sign-up {
+        margin: 50px 0;
+
+        & span:first-of-type {
+            font-family: "NeueHansKendrick";
+        }
+    }
 }
