@@ -492,3 +492,48 @@ a {
         }
     }
 }
+/* contact */
+
+.contact{
+    margin: 0 auto;
+    margin-top: 100px;
+    display:flex;
+    &__info{
+        width:50%;
+        .info__address{
+            margin-bottom:25px;
+            .title--contact{
+                color:hsla(0, 0%, 75%, 0.6);
+            }
+        }
+    }
+    &__form{
+        margin:0;
+        width:50%;
+        margin-bottom:50px;
+        .form__header{
+            color:hsla(0, 0%, 75%, 0.3);
+            margin-bottom:10px;
+        }
+        .info{
+            & input{
+                width:44%;
+            }
+            & input:first-of-type{
+                margin-right:10%;
+            }
+        }
+    }
+    @include small-tablet{
+        flex-direction: column;
+        align-items: center;
+        &__form, &__info{
+            width:80%;
+        }
+    }
+}
+.contact__map{
+    #map{
+        height:500px;
+    }
+}
