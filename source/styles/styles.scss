@@ -45,11 +45,13 @@ body {
 }
 
 * {
-    font-family: "NeueHansKendrickMedium";
+    font-family: "NeueHansKendrick";
     font-weight: normal;
     font-style: normal;
 }
-
+.text--link{
+    font-family: "NeueHansKendrickMedium";
+}
 .burger {
     position: absolute;
     top: 35px;
@@ -535,5 +537,15 @@ a {
 .contact__map{
     #map{
         height:500px;
+    }
+}
+
+/* cooperation */
+.content__column--coop{
+    justify-content: flex-start;
+}
+.content{
+    &__coop{
+        margin-top:100px;
     }
 }
