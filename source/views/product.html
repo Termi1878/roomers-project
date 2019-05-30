@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rooms</title>
+    <link href="https://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2.2.0/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="assets/styles/bundle.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-punk.css"> -->
+</head>
+
+<body>
+    <section class="hero"></section>
+    <h1 class="logo">
+        <svg width="90%" height="70%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image xlink:href="/assets/images/logo_white.svg" height="50%" width="100%" />
+        </svg>
+    </h1>
+    <header class="header">
+        <div class="burger burger--white burger--home">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <section class="menu">
+            <div class="menu__left">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#">Produkty</a</li> <li class="menu__item"><a href="log-in.html">Moje konto</a></li>
+                    <li class="menu__item"><a href="#">Regulamin</a></li>
+                </ul>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#">Współpraca</a></li>
+                    <li class="menu__item"><a href="contact.html">Kontakt</a></li>
+                    <li class="menu__item"><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="menu__right">
+                <div class="menu__language">
+                    <h3 class="title title--h3">Język</h3>
+                    <input class="checked" type="radio" name="language" id="polish" checked>
+                    <label for="polish">Polski</label>/
+                    <input class="checked" type="radio" name="language" id="english">
+                    <label for="english">Angielski</label>
+                </div>
+                <div class="menu__currency">
+                    <h3 class="title title--h3">Waluta</h3>
+                    <input class="checked" type="radio" name="currency" id="zloty" checked>
+                    <label for="zloty">Złoty</label>/
+                    <input class="checked" type="radio" name="currency" id="euro">
+                    <label for="euro">Euro</label>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="list__item">
+                    Meble
+                </li>
+                <li class="list__item">
+                    Oświetlenie
+                </li>
+                <li class="list__item">
+                    Dodatki
+                </li>
+                <li class="list__item">
+                    Akcesoria
+                </li>
+                <li class="list__item">
+                    Zewnętrzne
+                </li>
+                <li class="list__item">
+                    Łazienka
+                </li>
+                <li class="list__item">
+                    Nowości
+                </li>
+                <li class="list__item">
+                    Projektanci
+                </li>
+                <li class="list__item">
+                    Sale
+                </li>
+                <li class="list__item">
+                    <svg width="8%" height="5%" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff">
+                        <image xlink:href="/assets/images/search_ikon.svg" height="40%" width="100%" />
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="content__column">
+            <h2 class="column__header">500 metrów kwadratowych postindustrialnej hali oddanew posiadanie najlepszym
+                europejskim markom meblowym.
+            </h2>
+            <div class="column__description">
+                <p class="text text--column">
+                    Najnowsze projekty i klasyki designu: do salonu i jadalni, sypialni, łazienki, a także ogrodu i na
+                    taras.
+                </p>
+                <p class="text text--column">
+                    Niekoniecznie dla minimalistów ale na pewno dla przestrzennych purystów. Dla tych, którzy zamiast
+                    nadmiaru domowych obiektów wolą je odpowiednio wyeksponować.
+                </p>
+            </div>
+        </div>
+        <div class="content__column">
+            <div class='column__left'>
+                <img class="left__photo" src="assets/images/island.jpg" alt="#" srcset="assets/images/island.jpg">
+                <h2 class="title title--h3">ISLAND Collection</h2>
+                <p class="text">Francesco Rota</p>
+            </div>
+            <div class='column__right'>
+                <img class="right__photo" src="assets/images/stick.jpg" alt="#" srcset="assets/images/stick.jpg">
+                <h2 class="title title--h3">STICK Collection</h2>
+                <p class="text">Jan Plechac / Henry Wielgus</p>
+            </div>
+        </div>
+        <div class="content__column content__column--second">
+            <div class='column__left'>
+                <img class="left__photo" src="assets/images/space.jpg" alt="#" srcset="assets/images/space.jpg">
+                <h2 class="title title--h3">Space Invaders Mirrors</h2>
+                <p class="text">Piero Lissoni</p>
+            </div>
+            <div class='column__right'>
+                <img class="right__photo" src="assets/images/desk.jpg" alt="#" srcset="assets/images/desk.jpg">
+                <h2 class="title title--h3">Agape Desks</h2>
+                <p class="text">UT Agape</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const ico = document.querySelector('.burger');
+        ico.addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.menu').classList.toggle('none__menu');
+            document.querySelector('.navbar').classList.toggle('display__none');
+            document.querySelector('.burger--home').classList.toggle('burger--white');
+            document.querySelector('.logo svg').classList.toggle('logo__invert');
+        });
+    </script>
+</body>
+
+</html>
