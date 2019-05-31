@@ -118,12 +118,8 @@
     <section class="contact__map">
                     <div id="map"></div>
     </section>
+    <script src="/assets/scripts/index.js"></script>
     <script>
-        const ico = document.querySelector('.burger');
-        ico.addEventListener('click', function () {
-            this.classList.toggle('active');
-            document.querySelector('.menu').classList.toggle('none__menu');
-        });
             function initMap() {
               var lodz = {lat: 51.746, lng: 19.4420};
               var map = new google.maps.Map(

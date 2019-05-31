@@ -21,7 +21,7 @@
         </svg>
     </h1>
     <header class="header">
-        <div class="burger burger--home">
+        <div class="burger">
             <span></span>
             <span></span>
             <span></span>
@@ -30,7 +30,7 @@
             <div class="menu__left">
                 <ul class="menu__list">
                     <li class="menu__item"><a href="shop.html">Produkty</a</li> <li class="menu__item"><a
-                                href="log-in.html">Moje konto</a></li>
+                    href="log-in.html">Moje konto</a></li>
                     <li class="menu__item"><a href="#">Regulamin</a></li>
                 </ul>
                 <ul class="menu__list">
@@ -59,7 +59,7 @@
         <nav class="navbar navbar--black">
             <ul class="navbar__list">
                 <li class="list__item">
-                    <a href="index.html">Mebles</a>
+                    <a href="index.html">Meble</a>
                 </li>
                 <li class="list__item">
                     <a href="index.html">Oświetlenie</a>
@@ -156,7 +156,7 @@
                 <div class="products__image"><img src="/assets/images/space.jpg" alt="island"></div>
                 <h3 class="title title--h3"><span> Menu </span><span>Chunk</span></h3>
                 <p class="text">Świecznik marmurowy</p>
-                <p class="text"><span class="sale"><s>2099 zł</s></span> 1599 zł</p>
+                <p class="text"><span class="sale"><s>2099 zł </s></span> 1599 zł</p>
             </a>
         </div>
         <div class="products__item">
@@ -168,14 +168,7 @@
             </a>
         </div>
     </section>
-    <script>
-        const ico = document.querySelector('.burger');
-        ico.addEventListener('click', function () {
-            this.classList.toggle('active');
-            document.querySelector('.menu').classList.toggle('none__menu');
-            document.querySelector('.navbar').classList.toggle('display__none');
-        });
-    </script>
+    <script src="/assets/scripts/index.js"></script>
 </body>
 
 </html>
