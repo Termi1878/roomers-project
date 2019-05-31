@@ -1,29 +1,14 @@
 .text {
   display: block;
   margin: $gutter 0;
-
-  &--list{
-    font-size:14px;
-    font-weight: 700;
-    padding-left:35px;
-    color: $color--list;
-    opacity: .6;
-  }
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-  &--description {
-    font-size: 14px;
-    color: $color-description;
-    font-weight: 700;
-  }
 }
-a{
+.text--link {
+  font-family: "NeueHansKendrickMedium";
+}
+a {
   text-decoration: none;
-  list-style: none;
-  color: $item-color;
+  color: inherit;
+}
+.text--column {
+  margin: 2em 0;
 }

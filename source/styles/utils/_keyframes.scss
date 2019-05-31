@@ -31,18 +31,3 @@
         transform: translateX(-100%);
     }
   }
-    .hero {  
-    animation: 600ms ease-out 0s 1 slideInFromTop;
-    
-    background: #fff;
-  }
-  .navbar {  
-    animation: 600ms ease-out 0s 1 slideInFromBottom;
-    
-    background: #fff;
-  }
-  @include tablet{
-    .display__navbar{  
-        animation: 600ms ease-out 0s 1 slideInFromLeft;
-      }
-  }

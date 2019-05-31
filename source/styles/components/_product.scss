@@ -1,0 +1,155 @@
+
+/* product */
+.navbar--black {
+    color: #000;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 10%;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        padding: 15% 10%;
+    }
+
+    @include phone {
+        padding: 550px 10% 0 10%;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+    }
+
+    &__column {
+        width: 40%;
+
+        @include tablet {
+            width: 80%;
+        }
+    }
+
+    &__photo {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__selects {
+        margin-top: 10px;
+        border-top: 2px solid hsla(0, 0%, 75%, 0.2);
+        border-bottom: 2px solid hsla(0, 0%, 75%, 0.2);
+    }
+
+    &__select {
+        padding: 10px 0;
+
+        & select {
+            -webkit-appearance: none;
+            -webkit-border-radius: 0px;
+            border-radius: 0;
+            border: 0;
+            background: none;
+            font-size: 16px;
+            border-bottom: 1px solid #000;
+            color: hsla(0, 0%, 75%, 0.6);
+            outline: 0;
+            width: 200px;
+        }
+    }
+
+    &__cart {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-family: "NeueHansKendrickMedium";
+    }
+
+    &__links {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-evenly;
+
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.title--product {
+    & span {
+        font-family: "NeueHansKendrickMedium";
+    }
+}
+
+.products {
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+        @include small-tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    margin: 150px 50px;
+
+    &__item {
+        width: 20%;
+        text-align: center;
+
+        @include small-tablet {
+            width: 80%;
+            padding: 10px 0;
+
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.sale {
+    color: hsla(0, 0%, 75%, 1);
+}
+
+.shop__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .products__item {
+        width: 30%;
+        padding: 20px 0;
+
+        @include tablet {
+            width: 40%;
+        }
+
+        @include phone {
+            width: 80%;
+        }
+    }
+}
+
+.products__image {
+    overflow: hidden;
+}
+
+.products__image img {
+    transition: transform .5s ease;
+}
+
+.products__image:hover img {
+    transform: scale(1.2);
+}

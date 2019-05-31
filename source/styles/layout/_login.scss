@@ -1,0 +1,58 @@
+/*logging site */
+.basket__count {
+    margin: 0 auto;
+    margin: 35px 0 0 160px;
+
+    @include phone {
+        margin-top: 70px;
+    }
+}
+
+.login {
+    margin: 0 auto;
+    width: 35%;
+    margin-top: 100px;
+
+    @include tablet {
+        width: 60%;
+    }
+
+    @include phone {
+        width: 80%;
+    }
+
+    &__header {
+        opacity: 0.2;
+    }
+
+    p {
+        & input {
+            @include input-styling;
+            height: 35px;
+            width: 100%;
+            border-bottom: 1px solid #000;
+            opacity: 0.6;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus {
+            border-bottom: 1px solid #000;
+            -webkit-text-fill-color: none;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    }
+
+    .reminder {
+        margin: 20px 0;
+        font-size: 12px;
+    }
+
+    .sign-up {
+        margin: 50px 0;
+
+        & span:first-of-type {
+            font-family: "NeueHansKendrick";
+        }
+    }
+}
