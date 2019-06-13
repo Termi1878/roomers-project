@@ -2,15 +2,13 @@
 <html lang="pl">
 
 <head>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rooms</title>
+    <title>Roomers - dla domu</title>
     <link href="https://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2.2.0/dist/flickity.min.css"> -->
     <link rel="stylesheet" href="assets/styles/bundle.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-punk.css"> -->
 </head>
 
 <body>
@@ -28,14 +26,14 @@
     <section class="menu">
         <div class="menu__left">
             <ul class="menu__list">
-                <li class="menu__item"><a href="#">Produkty</a</li> <li class="menu__item"><a href="#">Moje konto</a>
-                </li>
+                <li class="menu__item"><a href="shop.html">Produkty</a</li> <li class="menu__item"><a
+                href="log-in.html">Moje konto</a></li>
                 <li class="menu__item"><a href="#">Regulamin</a></li>
             </ul>
             <ul class="menu__list">
-                <li class="menu__item"><a href="#">Współpraca</a></li>
-                <li class="menu__item"><a href="#">Kontakt</a></li>
-                <li class="menu__item"><a href="#">FAQ</a></li>
+                <li class="menu__item"><a href="coop.html">Współpraca</a></li>
+                <li class="menu__item"><a href="contact.html">Kontakt</a></li>
+                <li class="menu__item"><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
         <div class="menu__right">
@@ -55,18 +53,17 @@
             </div>
         </div>
     </section>
-    <div class="basket">
-        <h2 class="title title--h3">Koszyk:        <span> 2</span></h2>
-    </div>
     <section class="login">
-        <div class="login__header"> <h2 class="title title--h3 title--login">Logowanie</h2></div>
+        <div class="login__header">
+            <h2 class="title title--h3 title--login">Logowanie</h2>
+        </div>
         <div class="login__form">
             <form action="log-in.html" method="POST">
                 <p><label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Adres e-mail"></p>
+                    <input type="email" name="email" id="email" placeholder="Adres e-mail"></p>
                 <p><label for="password"></label>
-                <input type="password" name="password" id="password" placeholder="Hasło"></p>
-                    <div class="reminder" ><a href="#">Nie pamiętasz hasła?</a></div> 
+                    <input type="password" name="password" id="password" placeholder="Hasło"></p>
+                <div class="reminder"><a href="#">Nie pamiętasz hasła?</a></div>
                 <button type="submit" class="submit">Zaloguj się</button>
             </form>
         </div>
@@ -75,12 +72,6 @@
             <span><a href="#">Zarejestruj się</a></span>
         </div>
     </section>
-    <script>
-        const ico = document.querySelector('.burger');
-        ico.addEventListener('click', function () {
-            this.classList.toggle('active');
-            document.querySelector('.menu').classList.toggle('none__menu');
-        });
-    </script>
-</body>
+    <script src="/assets/scripts/bundle.js"></script></body>
+
 </html>

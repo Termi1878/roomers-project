@@ -1,0 +1,20 @@
+.logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    right: 50px;
+    left: 0;
+    top: 25px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+
+    & svg {
+        width: 100px;
+    }
+
+    height:50px;
+}
+.logo__invert {
+    filter: invert(1);
+}

@@ -1,0 +1,13 @@
+
+.checked {
+    visibility: hidden;
+    display: none;
+}
+
+.checked+label {
+    color: gray;
+}
+
+.checked:checked+label {
+    color: #000;
+}

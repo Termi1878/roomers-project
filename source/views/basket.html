@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roomers - dla domu</title>
+    <link href="https://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/bundle.css">
+</head>
+
+<body>
+    <h1 class="logo">
+        <a href="index.html"><svg width="90%" height="70%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#ffffff">
+            <image xlink:href="/assets/images/Logo_svg.svg" height="50%" width="100%" />
+        </svg></a>
+    </h1>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <section class="menu">
+            <div class="menu__left">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="shop.html">Produkty</a</li> <li class="menu__item"><a
+                        href="log-in.html">Moje konto</a></li>
+                        <li class="menu__item"><a href="#">Regulamin</a></li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="coop.html">Współpraca</a></li>
+                        <li class="menu__item"><a href="contact.html">Kontakt</a></li>
+                        <li class="menu__item"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+        <div class="menu__right">
+            <div class="menu__language">
+                <h3 class="title title--h3">Język</h3>
+                <input class="checked" type="radio" name="currency" id="polish" checked>
+                <label for="polish">Polski</label>/
+                <input class="checked" type="radio" name="currency" id="english">
+                <label for="english">Angielski</label>
+            </div>
+            <div class="menu__currency">
+                <h3 class="title title--h3">Waluta</h3>
+                <input class="checked" type="radio" name="language" id="zloty" checked>
+                <label for="zloty">Złoty</label>/
+                <input class="checked" type="radio" name="language" id="euro">
+                <label for="euro">Euro</label>
+            </div>
+        </div>
+    </section>
+    <div class="basket__count">
+        <h2 class="title title--h3">Koszyk: <span> </span></h2>
+    </div>
+    <section class="basket">
+        <div class="basket__header">
+            <h2 class="title title--h3">Koszyk</h2>
+        </div>
+        <div class="basket__content">
+            <div class="basket__item">
+                <div class="item__left">
+                    <div class="basket__image">
+                        <img src="/assets/images/modulowa.jpeg" alt="">
+                    </div>
+                    <div class="basket__title">
+                        <h3 class="title title--h4">Inmotion</h3>
+                        <h3 class="title title--h4">Szafki modułowe</h3>
+                    </div>
+                </div>
+                <div class="basket__description">
+                    <div class="description__item">
+                        <span class="item__info">Kolor bazowy:</span>
+                        <span class="item__result">Biały</span>
+                    </div>
+                    <div class="description__item">
+                        <span class="item__info">Wykończenia:</span>
+                        <span class="item__result">Stal</span>
+                    </div>
+                    <div class="description__item">
+                        <span class="item__info">Wnętrze:</span>
+                        <span class="item__result">Satyna</span>
+                    </div>
+                </div>
+                <div class="item__right">
+                    <div class="basket__price">
+                        <span class="title title--h3 price__calc">4099</span>
+                    </div>
+                    <div class="basket__delete">
+                        X
+                    </div>
+                </div>
+            </div>
+            <div class="basket__item">
+                <div class="item__left">
+                    <div class="basket__image">
+                        <img src="/assets/images/swiecznik.jpg" alt="">
+                    </div>
+                    <div class="basket__title">
+                        <h3 class="title title--h4">Chunk</h3>
+                        <h3 class="title title--h4">Świecznik marmurowy</h3>
+                    </div>
+                </div>
+                <div class="basket__description">
+                    <div class="description__item">
+                        <span class="item__info">Kolor bazowy:</span>
+                        <span class="item__result">Biały marmur</span>
+                    </div>
+                    <div class="description__item">
+                        <span class="item__info">Wykończenia:</span>
+                        <span class="item__result">Miedź</span>
+                    </div>
+                </div>
+                <div class="item__right">
+                    <div class="basket__price">
+                        <span class="title title--h3 price__calc">2099</span>
+                    </div>
+                    <div class="basket__delete">
+                            X
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="basket__payment">
+            <div class="basket__price payment__price">
+                <span>Razem do zapłaty:</span>
+                <span class="price__calc price__result"></span>
+            </div>
+            <div class="payment__checkout"> <a href="log-in.html">Przejdź do płatności</a></div>
+        </div>
+    </section>
+    <script src="/assets/scripts/bundle.js"></script>
+</body>
+
+</html>

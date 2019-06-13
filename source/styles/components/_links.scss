@@ -1,0 +1,32 @@
+.links {
+    &__download {
+        display: flex;
+        width: 30%
+    }
+
+    &__social {
+        display: flex;
+        width: 30%;
+        flex-wrap: wrap;
+        align-items: baseline;
+        a {
+            width: 20px;
+        }
+    }
+
+    @include phone {
+        justify-content: center;
+        padding: 20px;
+
+        &__social {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        &__download {
+            width: 100%;
+        }
+    }
+}

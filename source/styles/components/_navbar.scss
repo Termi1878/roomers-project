@@ -1,109 +1,22 @@
-.navbar{
-    border-bottom: $border;
-    margin-bottom: 40px;
-    margin-top:100px;
-    &__list{
-        & li:nth-child(4){
-            color:#000;
-            font-size:24px;
-            font-weight:600;
-            @include tablet{
-                font-size: 24px;
-                sup{
-                    font-size:15px;
-                }
-            }
-        }
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding:3vw;
-        align-items: baseline;
-        font-weight: 700;
-        opacity: .8;
-        @include tablet{
-            flex-direction: column;
-            align-items: center;
-            font-size: 24px;
-            height: calc(100vh - 100px);
-        }
-    }
-    @include tablet {
-        display:none;
-    }
-}
-sup{
-    vertical-align:super;
-    font-size: 12px;
-}
-.display__navbar{
-    display:block;
-}
-.menu__icon{
-    display:none;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    @include tablet{
-        display:block;;
-    }
-}
-.navigator {
-    width: 100%;
-    z-index: 1;
 
-    @include tablet {
-        position: fixed;
+.navbar {
+    &__list {
+        margin: 0;
+        padding: 0;
     }
 
-    .navbar {
-        @include tablet {
-            margin: 80px 0 0 0;
-            width: 50%;
-        }
-        border: 0;
-
-        @include marmur-bg;
-        font-size: 14px;
-
-        @media (min-width: 993px){
-            margin: -120px 5% 0 5%;
-        }
-        @include desktop-min{
-            margin: -120px 10% 0 10%;
-        }
-        @include phone {
-            width: 100%;
-        }
-    }
+    top:150px;
+    left:55px;
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    width:50px;
 }
-
-.navigator-no-bg {
-    position: relative;
-
-    .navbar {
-        @include tablet {
-            z-index:999;
-            position: fixed;
-            margin-top:80px;
-        }
-
-        margin:0;
-        background:#fff;
-    }
+.list__item {
+    list-style-type: none;
+    font-size: 24px;
+    padding: 3px 0;
 }
-.active{
-    color:black;
-    font-size: 1.2em;
-}
-.navigator .navbar.fixed{
-    position: fixed;
-    top:0px;
-    left:0;
-    width: 100%;
-    margin:0;
-    @media (min-width:568px) and (max-width:992px){
-        width:50%;
-    }
+.display__none{
+    display: none;
 }
