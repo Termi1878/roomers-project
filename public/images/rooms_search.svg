@@ -3,7 +3,7 @@
 <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 21 21" style="enable-background:new 0 0 21 21;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#ffffff;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <g>
 	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1.631 11.6373)" class="st0" cx="13.2" cy="7.8" rx="6.8" ry="6.8"/>
